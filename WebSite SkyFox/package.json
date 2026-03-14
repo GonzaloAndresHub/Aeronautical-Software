@@ -1,0 +1,50 @@
+{
+  "name": "desktop",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gonzalo Andres <stuidesandres88@gmail.com>",
+  "license": "MIT",
+  "licence": "ICS",
+  "build": {
+    "appId": "Gonzalo-electronv1",
+    "asar": true,
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    }
+  },
+  "dependencies": {
+    "electron": "^20.1.0",
+    "update-electron-app": "^2.0.1"
+  },
+  "devDependencies": {
+    "electron-builder": "^23.3.3"
+  },
+  "description": "SkyFox Aerospace Software"
+}

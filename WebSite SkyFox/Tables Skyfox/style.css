@@ -1,0 +1,127 @@
+/*Letter Styles from Google Fonts (Orbitron)*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.container{
+   position: absolute;
+   width: 100%;
+   display: flex;
+   list-style: none;
+}
+
+.container li a{
+    position: relative;
+    left: 640px;
+    text-decoration: none;
+
+}
+
+.header_fixed{
+    position: relative;
+    right: 2px;
+    bottom: -30px;
+}
+
+.container li a{
+    background: turquoise;
+    color: black;
+    border: white solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.container li a :hover{
+    background: whitesmoke;
+    color: aqua;
+}
+
+/*Styles to all the screen configuration*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Position of the box and table, 
+Letter invocation Styles Font family, Font body color*/
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    background: rgb(1,0,10);
+    background: linear-gradient(90deg, rgba(1,0,10,1) 0%, rgba(33,33,33,1) 35%, rgba(40,138,158,1) 100%);
+}
+
+table{
+    border-collapse: collapse;
+}
+/*header modification and scrollbar and style(overflow, border)*/
+.header_fixed{
+    height: 500px;
+    overflow: auto;
+    margin-top: 30px;
+    border: 1px solid #dddddd;
+}
+
+/*Styles to head background color letter and boxes*/
+.header_fixed thead th{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: turquoise;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+/*Table borders definition and apliation for the boxes of the table*/
+th,td{
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    font-size: 5px solid #E6E7EB;
+}
+
+/*Styles imagens*/
+td img{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 5px solid #E6E7E8;
+}
+
+/*Styles color to some rows on the table*/
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+/*Color patterns in the rows on the table*/
+tr:nth-child(odd){
+    background-color: #EDEEF1;
+}
+
+/*Color to the rows cursor for every box*/
+tr:hover td{
+    color: turquoise;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+td button{
+    border: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    background-color: turquoise;
+    color: white;
+}
+
+/*Styles to the scrollbar*/
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+/*Styles imagens*/
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+}
+
+::-webkit-scrollbar-thumb{
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+}
