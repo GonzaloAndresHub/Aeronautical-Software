@@ -1,6 +1,3 @@
-# Aeronautical-Software
-Aeronautical software system for flight operations and management
-
 # ✈️ SkyFox — Aeronautical Software
 
 > Internal aeronautical management platform for flight operations, technical documentation, and personnel administration.
@@ -28,7 +25,9 @@ Aeronautical software system for flight operations and management
 |------------|---------|
 | Electron | Desktop application framework |
 | HTML / CSS / JavaScript | User interface |
+| C# | Backend logic and services |
 | Database | Data persistence and management |
+| Git | Version control and repository management |
 
 ---
 
